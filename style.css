@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(243, 182, 243);
+    font-size: 20px;
+   
+}
+header{
+    height: 80px;
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 0px;
+    padding: 0px 30px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+}
+.container{
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+.logo{
+    font-family:'Comforter Brush', cursive; ;
+}
+header nav{
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background-color: violet;
+    height: 40vh;
+    width:100% ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: 0.5s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.showNav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header li a{
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+    display: block;
+   
+}
+header li a:hover{
+    opacity: 1;
+}
